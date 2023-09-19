@@ -37,3 +37,10 @@
     return //<div><Message></Message></div>
   }
   export default App;
+
+**Creating components**
++ to install bootstrap cmd: npm i bootstrap@5.2.3
++ A component cannot return more than one element (eg: cannot return both h1 and ul)
++ If we want to return 2 elements together then wrap them in a div and return the div
++ better way is to return the fragment.
++ In javascript the result of (true && 'text') is text and (false && 'text') is false
