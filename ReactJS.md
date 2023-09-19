@@ -46,4 +46,31 @@
 + In javascript the result of (true && 'text') is text and (false && 'text') is false
 + We can reuse of components with different inputs using props or properties.
 + Instead of defining variables inside a component we should be able to pass them as parameters or inputs to the components using props or properties. Similarly for heading and other elements as well in order to make our components reusable.
-+ 
++ We can define the shape of the input that the component recieves by defining an interface.
++ interface Props{
+      items: string[];
+      heading: string;
+  }
+  then define this as a paramater in the function of the component:
+  function ListGroup(props: Props){}
+  then we pass the values from the App component:
+  <listGroup items={items} heading="Cities" />
++ props are immutable (not changeable). State is immutable. variable of props cannot be changed inside a component but state variables can be changed.
++ We can also pass children to our components.
+  interface Props{
+      children: string;
+  }
+  This way we can pass our text as a child to the component
+  <div>
+      <Alert> Welcome! </Alert>
+  </div>
+  In case we want to pass HTML as children:
+  interface Props {
+     children: ReactNode;
+  }
+  and we can pass it like this in the App component:
+  <div>
+      <Alert>
+        <h1>Welcome!</h1>
+      </Alert>
+    </div>
