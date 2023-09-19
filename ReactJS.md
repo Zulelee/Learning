@@ -19,3 +19,21 @@
 + src folder -> source code is stored
 + index.html ->
 + package.json -> contains info about the project. (dependencies etc)
+
+**Creating a React component**
++ create a new typescript file in src folder (.tsx)
++ 2 ways to create a component: Javascipt Class and functions
++ Using Functions is more popular
++ Use PascalCasing for naming function
++ In the function you need to describe what the UI will look like when the function is used.
++ function Message(){
+      // the tag is JSX (Javascript XML)
+      return <h1>Hello</h1>;
+  }
++ to use this function to need to export it as well by : export default Message;
++ To add this component in our APP component (which is our main component), in our App.tsx file:
+  import Message form './Message';
+  function App(){
+    return <div><Message></Message></div>
+  }
+  export default App;
