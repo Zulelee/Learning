@@ -44,3 +44,6 @@
 + If we want to return 2 elements together then wrap them in a div and return the div
 + better way is to return the fragment.
 + In javascript the result of (true && 'text') is text and (false && 'text') is false
++ We can reuse of components with different inputs using props or properties.
++ Instead of defining variables inside a component we should be able to pass them as parameters or inputs to the components using props or properties. Similarly for heading and other elements as well in order to make our components reusable.
++ 
