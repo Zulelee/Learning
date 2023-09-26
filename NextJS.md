@@ -42,5 +42,31 @@
 + We can get dummy data from -> https://jsonplaceholder.typicode.com/
 
 # Caching
-+ 
-+   
++ Caching is to store data somehwere it is faster to access.
++ We can store data in 3 places: Memory, File system or network.
++ Getting data from the network is slower than getting from the file system.
++ NextJS comes with a built-in data cache.
++ NextJS will automatically store data in the data cache that is based on the file system.
+
+# Rendering
++ Performance optimization technique, also called static site generation.
++ If we have webpages that have static data, we can make nextjs render them once when building the application.
++ In comparison we have dynamic rendering, which renders the content at request time.
++ Both are done on the server side
+
+# Styling NextJS application
+## Global styles
++ global.css file in the app folder.
++ Use this for style that are global in our application.
++ Donot define custom classes here as they are only for specific components or page.
+
+## CSS Modules
++ This is for a specific component/page
++ In the components folder, add a new file for the component for which you want to create the style sheet and keep the name same as the component and the extension should be .module.css
+
+## Tailwind
++ A popular CSS framework
++ we have utility classes that we can use to style our applications
+
+## DaisyUI
++ Component library for tailwind (bootstrap for tailwind)
